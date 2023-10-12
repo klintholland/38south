@@ -4,7 +4,7 @@
 module.exports = {
   siteMetadata: {
     title: `38 South`,
-    description: `Elevating products and inspiring teams - leverage our experience to win.`
+    description: `Elevating products and inspiring teams - leverage our experience to win.`,
     siteUrl: `https://thirtyeight.so`,
   },
   plugins: [

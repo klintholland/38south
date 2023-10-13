@@ -7,6 +7,7 @@ body, html {
 
 body {
   background: #000;
+  color: #0D0D0D;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,3 +23,52 @@ main {
   }
 }
 
+$diamond-size: 5px;
+$gap: 24px;
+$animation-time: 5s;
+
+.diamond-grid {
+  position: absolute;
+  z-index: -1;
+  top: -50vh;
+  left: -50vw;
+  width: 200vw;
+  height: 200vh;
+  overflow: hidden;
+  transform: rotate(-45deg) scale(1);
+  
+  i {
+    color: #0D0D0D;
+    color: yellow;
+  }
+}
+
+.row {
+  display: flex;
+  gap: $gap;
+  overflow: hidden;
+  margin-bottom: $gap;
+
+  &:nth-child(odd) {
+    animation: moveRight $animation-time infinite linear;
+  }
+
+  &:nth-child(even) {
+    animation: moveLeft $animation-time infinite linear;
+  }
+}
+
+.diamond i {
+  font-size: $diamond-size;
+  color: #0D0D0D;
+}
+
+@keyframes moveRight {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-#{$diamond-size + $gap + ($diamond-size * 2)}); }
+}
+
+@keyframes moveLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(#{$diamond-size + $gap + ($diamond-size * 2)}); }
+}

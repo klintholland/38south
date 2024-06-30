@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "gatsby": "^5.12.4",
+    "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-google-gtag": "^5.12.1",
     "gatsby-plugin-image": "^3.12.1",
     "gatsby-plugin-manifest": "^5.12.1",
@@ -28,6 +29,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
-    "sass": "^1.69.3"
+    "sass": "^1.69.3",
+    "three": "^0.157.0"
   }
 }

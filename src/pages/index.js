@@ -16,6 +16,7 @@ const IndexPage = () => {
             height: "auto"
           }}
         />
+        <button>Schedule a free 30-minute call</button>
       </main>
       <DiamondGrid />
     </>

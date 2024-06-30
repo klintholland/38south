@@ -1,3 +1,7 @@
+:root {
+  --pop-dark: #F87D55;
+}
+
 body, html {
   width: 100%;
   height: 100%;
@@ -11,15 +15,30 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Noto Sans', serif;
 }
 
 main {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   .gatsby-image-wrapper {
     width: 50% !important;
     max-width: 350px;
     margin-top: -64px;
+  }
+
+  button {
+    border-radius: 56px;
+    border: 4px solid var(--Pop-Dark, #F87D55);
+    display: inline-block;
+    width: 240px;
+    padding: 1em 0;
+    background: transparent;
+    color: white;
+    margin-top: 4rem;
   }
 }
 
@@ -58,9 +77,12 @@ $animation-time: 5s;
   }
 }
 
-.diamond i {
-  font-size: $diamond-size;
-  color: #0D0D0D;
+.diamond {
+
+  svg {
+    fill: #121212;
+  }
+
 }
 
 @keyframes moveRight {

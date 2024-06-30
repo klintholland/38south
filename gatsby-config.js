@@ -46,5 +46,15 @@ module.exports = {
       },
       __key: "images"
     },
+    {
+      resolve: 'gatsby-plugin-google-fonts',
+      options: {
+        fonts: [
+          "Noto+Sans",
+          "source sans pro\:300,400,400,700" // you can also specify font weights and styles
+        ],
+        display: 'swap'
+      }
+    },
   ]  
 };

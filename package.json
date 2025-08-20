@@ -15,12 +15,13 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "css-loader": "^7.1.2",
     "gatsby": "^5.12.4",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-google-gtag": "^5.12.1",
     "gatsby-plugin-image": "^3.12.1",
     "gatsby-plugin-manifest": "^5.12.1",
-    "gatsby-plugin-sass": "^6.12.1",
+    "gatsby-plugin-sass": "^6.13.1",
     "gatsby-plugin-sharp": "^5.12.1",
     "gatsby-plugin-sitemap": "^6.12.1",
     "gatsby-source-filesystem": "^5.12.0",
@@ -29,7 +30,16 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
-    "sass": "^1.69.3",
+    "sass": "^1.77.8",
+    "sass-loader": "^16.0.0",
+    "style-loader": "^4.0.0",
     "three": "^0.157.0"
+  },
+  "devDependencies": {
+    "@material-tailwind/react": "^2.1.9",
+    "autoprefixer": "^10.4.20",
+    "gatsby-plugin-postcss": "^6.13.1",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.7"
   }
 }

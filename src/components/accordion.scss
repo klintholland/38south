@@ -1,0 +1,38 @@
+.accordion {
+  font-family: Raleway, san-serif;
+  width: 100%;
+  max-width: 400px;
+
+  .accordion-item {
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    .accordion-header {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      padding: 1em;
+      color: white;
+
+      .accordion-icon {
+        margin-right: 1em;
+        width: 32px;
+        height: auto;
+      }
+
+      .accordion-title {
+        font-size: 1.2em;
+      }
+
+    }
+
+    .accordion-content {
+      background-color: transparent;
+      color: white;
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}

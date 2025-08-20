@@ -14,7 +14,7 @@ const IndexPage = () => {
         speed={10}
         diamondColor="#121212"
         accentColor="#ff7a00"
-        highlightCount={6}
+        highlightCount={16}
         highlightEveryMs={10000}
         opacity={1}
         targetFps={0}
